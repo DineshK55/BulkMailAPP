@@ -1,0 +1,103 @@
+.history-page {
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+.history-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #111827;
+}
+
+.loading {
+  text-align: center;
+  font-size: 20px;
+  color: #2563eb;
+}
+
+.empty {
+  text-align: center;
+  font-size: 20px;
+  color: #6b7280;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
+}
+
+.email-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.email-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subject {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.status {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.value {
+  color: #6b7280;
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.message {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.date {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-title {
+    font-size: 30px;
+  }
+}
